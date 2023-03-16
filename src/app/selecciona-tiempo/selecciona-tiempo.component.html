@@ -1,0 +1,33 @@
+<div class="content" role="main">
+
+    <h1 style="margin-top: -10%;">
+        Seleccionar el tiempo
+    </h1>
+
+    <mat-card style="border-radius:25px; margin-top: 25%">
+        <mat-card-header>
+            <p style="color:black;margin-left: 3%">Tiempo de las pulsaciones para apagar alarma</p>
+        </mat-card-header>
+        <!-- <mat-card-content> -->
+            <div class="maincontainer" style="margin-bottom:15%">
+                <div style="width: 35%;margin-left:15%">
+                    <p class="boxhelper">Minutos</p>
+                    <mat-form-field appearance="fill" class="formInputred redBox">
+                        <input matInput type="number" placeholder="01" style="font-size: 250%;">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <p class="connector">:</p>
+                </div>
+                <div style="width: 35%">
+                    <p class="boxhelper">Segundos</p>
+                    <mat-form-field appearance="fill" class="formInputclear redBox">
+                        <input matInput type="number" placeholder="00" style="font-size: 250%;">
+                    </mat-form-field>
+                </div>
+            </div>
+        <!-- </mat-card-content> -->
+    </mat-card>
+
+    <app-basic-button style="margin-top: 25%;" buttonLink="/confirmar" buttontext="Siguiente"></app-basic-button>
+</div>

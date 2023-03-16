@@ -1,0 +1,29 @@
+<div class="content" role="main">
+
+
+
+  <div class="semitransparent" *ngIf="configMenu">
+
+  </div>
+
+        <!--  -->
+
+  <h1>
+    Listado de alarmas
+  </h1>
+  <button (click)="switchConfig()" mat-fab extended style="background-color: #F01D1D !important;margin-top: 2%;margin-left:49%">
+    <div>Configuracion</div>
+  </button>
+
+
+    <mat-card class="config" *ngIf="configMenu" style="margin-bottom: 10%; margin-top:10%;margin-bottom: -15.55%;">
+      <mat-card-content><a routerLink="/configurardatos">Configurar datos personales</a></mat-card-content>
+    </mat-card>
+
+  <app-list-element content="Alarma 1" style="margin-top: 25%;"></app-list-element>
+  <app-list-element content="Alarma 2" style="margin-top: 10%;"></app-list-element>
+
+  <button [disabled]="configMenu" mat-fab extended style="margin-top: 20%;background-color: #F01D1D !important">
+    <a routerLink="/seleccionahora" style="color: white;">Crear Alarma</a>
+  </button>
+</div>

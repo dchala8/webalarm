@@ -1,0 +1,30 @@
+<div class="content" role="main">
+
+    <h1 style="margin-top:0%">
+        Configurar Alarma
+    </h1>
+
+
+    <app-input-field fieldname="Hora" style="margin-top: 5%;"></app-input-field>
+
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style" style="border-radius:25px; margin-top:5%; " value="null">
+      <mat-button-toggle value="null" ><div style="margin-left:5%;margin-right:5%;text-align:center;">Dia</div></mat-button-toggle>
+      <mat-button-toggle value="bold" ><div style="margin-left:5%;margin-right:5%;text-align:center;">Dia</div></mat-button-toggle>
+      <mat-button-toggle value="bold" ><div style="margin-left:5%;margin-right:5%;text-align:center;">Dia</div></mat-button-toggle>
+      <mat-button-toggle value="bold" ><div style="margin-left:5%;margin-right:5%;text-align:center;">Dia</div></mat-button-toggle>
+      <mat-button-toggle value="bold" ><div style="margin-left:5%;margin-right:5%;text-align:center;">Dia</div></mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <app-input-field fieldname="Pulsaciones" style="margin-top: 5%;"></app-input-field>
+
+    <app-input-field fieldname="Tiempo" style="margin-top: 5%;"></app-input-field>
+
+    <div style="color:white; margin-top:5%">Editable desde movil? <mat-slide-toggle color="warn"></mat-slide-toggle></div>
+
+
+    <div style="margin-top: 15%">
+      <app-basic-button buttonLink="/listadoalarmas" buttontext="Guardar" style="margin-left: -4%"></app-basic-button>
+      <app-basic-button buttonLink="/listadoalarmas" buttontext="Cancelar"style="margin-left: 2%"></app-basic-button>
+      <app-basic-button buttonLink="/seleccionahora" buttontext="Borrar"style="margin-left: 2%"></app-basic-button>
+  </div>
+</div>
